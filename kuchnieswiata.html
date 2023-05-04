@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuchnie świata</title>
+</head>
+<style>
+              *{
+            padding: 0;
+            margin: 0;
+        }
+
+        header{
+            width: 100vw;
+            height: auto;
+            background-color: #939393;  
+        }
+
+        .logo{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .menu{
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid rgb(255, 255, 255);
+            border-bottom: 1px solid rgb(255, 255, 255);
+        }
+
+        ol {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            list-style-type:none;
+            padding:0;
+            margin:0;
+            font-size:18px;
+            height:2em;
+            line-height:2em;
+            text-align:center;
+        }
+
+        ol a {
+            display:block;
+            text-decoration:none;
+            color:rgb(0, 0, 0);
+            padding:0 5px;
+        }
+
+        ol > li {
+            float:left;
+            width:150px;
+            margin-left:1px;
+            background-color:#939393;
+            height:2em;
+        }
+
+        ol > li:first-child {
+            margin-left:0;
+        }
+
+        ol > li:hover {
+            background-color:#EEE;
+        }
+
+        ol > li:hover > a {
+            color:#09C;
+        }
+
+        ol > li:hover > ul {
+            display:block;
+        }
+
+        ol > li > ul {
+            display:none;
+            list-style-type:none;
+            padding:0;
+            margin:0;
+        }
+
+        ol > li > ul > li {
+            position:relative;
+            background-color:#EEE;
+        }
+
+        ol > li > ul > li > a {
+            border-top:1px solid #FFF;
+        }
+
+        ol > li > ul > li:hover {
+            background-color:#DDD;
+        }
+
+        main{
+            width: 100vw;
+            background-color: #cccccc;
+        }
+
+        article{
+            padding: 30px;
+            width: 50%;
+            margin: 0 auto;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+        }
+
+
+        article h3{
+            color: rgb(0, 0, 0);
+            padding-top: 20%;
+        }
+
+        article img{
+            border-radius: 10%;
+            border: 1px solid #302f2f;
+            box-shadow: 5px 5px 5px #302f2f;
+        }
+
+        article p{
+            font-size: 16px;
+        }
+
+        .imgkuchnieswiata{
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer{
+            background-color: #939393;
+            color: #959595;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+        nav ol {
+        font-size: 14px;
+        }
+}
+</style>
+<body style="overflow-x: hidden;">
+    <header>
+        <div class="logo">
+            <a href="stronaglowna.html"><img src="Img/Logo.png" alt="logo" width="80%"></a>
+        </div>
+        <div class="menu">
+            <nav>
+                <ol>
+                    <li><a href="stronaglowna.html">Strona główna</a></li>
+                    <li><a href="onas.html">O nas</a></li>
+                    <li><a href="kuchnieswiata.html">Kuchnie świata</a></li>
+                    <li>Przepisy
+                        <ul>
+                          <li><a href="sniadanie.html">Śniadanie</a></li>
+                          <li><a href="obiad.html">Obiad</a></li>
+                          <li><a href="kolacja.html">Kolacja</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="tekst">
+                <h2>Różne kuchnie świata</h2>
+            </div>
+            <div class="kuchniapolska">
+                <div class="imgkuchnieswiata" style="position:relative;width:200px;height:150px;">
+                    <img src="Img/polskakuchnia.jpg" width="200" height="100" />
+                    <div style="position:absolute;top: 0; left: 0; right: 0; bottom: 0;">
+                        <h3>Kuchnia polska</h3>
+                    </div>
+                </div>
+                <div>
+                    <p>Na kształtowanie się swoistych cech kuchni polskiej miały wpływ przemiany historyczne. Na przestrzeni dziejów kuchnia polska ulegała wpływom i zmianom regionalnym, zwłaszcza że tereny Rzeczypospolitej Polskiej historycznie zamieszkiwała zmieniająca się mozaika narodów. W efekcie silne są kulinarne wpływy wschodnie (tatarsko-tureckie, wcześniej mongolskie), rusińskie, niemieckie, francuskie, włoskie i żydowskie.</p>
+                </div>
+            </div>
+            <div class="kuchniawloska">
+                <div class="imgkuchnieswiata" style="position:relative;width:200px;height:150px;">
+                    <img src="Img/kuchniawloska2.png" width="200" height="100" />
+                    <div style="position:absolute;top: 0; left: 0; right: 0; bottom: 0;">
+                    <h3>Kuchnia włoska</h3>
+                </div>
+                </div>
+                <div>
+                    <p>Jest jedną z dwóch najbardziej popularnych kuchni europejskich. Charakteryzuje się ona korzystaniem z dużej ilości warzyw i przypraw. W kuchni tej dość powszechnie stosuje się oliwę, pomidory , a także oliwki. Kuchnia włoska wyspecjalizowała się szczególnie w potrawach mącznych oraz w rybnych i owocach morza.  Włosi pod względem zasad kulinarnych są bardzo przywiązani do swojej tradycji. W kuchni włoskiej nie ma miejsca na ustępstwa pod względem jakości składników lub dodatków. </p>
+                </div>
+            </div>
+            <div class="kuchniaamerykanska">
+                <div class="imgkuchnieswiata" style="position:relative;width:200px;height:150px;">
+                    <img src="Img/kuchniamaerykanska.jpg" width="200" height="100" />
+                    <div style="position:absolute;top: 0; left: 0; right: 0; bottom: 0;">
+                    <h3>Kuchnia Amerykańska</h3>
+                </div>
+                </div>
+                <div>
+                    <p>Z uwagi na to, że Stany Zjednoczone są mieszanką kulturową ludzi z całego świata pojęcie "kuchni amerykańskiej" dotyczy potraw popularnych w tym państwie, mających jednak źródła w innych rejonach świata, spopularyzowanych przez przybyłych imigrantów. Z drugiej strony wiele dań popularnych na całym świecie kojarzonych jest właśnie z "kuchnią amerykańską".</p>
+                </div>
+            </div>
+            <div class="kuchniawietnamska">
+                <div class="imgkuchnieswiata" style="position:relative;width:200px;height:150px;">
+                    <img src="Img/kuchniawietnamska.jpg" width="200" height="100" />
+                    <div style="position:absolute;top: 0; left: 0; right: 0; bottom: 0;">
+                    <h3>Kuchnia Wietnamska</h3>
+                </div>
+                </div>
+                <div>
+                    <p>Tradycyjne wietnamskie potrawy są bardzo podobne do chińskich, ze względu na wielowiekowe chińskie wpływy kulturowe. Powszechnie do jedzenia używa się pałeczek i często korzysta z woka. Widoczną, ważną różnicą jest użycie sosu rybnego w miejsce sojowego. W wietnamskich przepisach używa się też bardzo często palczatki cytrynowej , limonki oraz odmiany limonki o angielskiej nazwie kaffir lime, kolendry oraz mięty wietnamskiej. Inną różnicą jest stosowanie świeżych warzyw, zwłaszcza sałaty.</p>
+                </div>
+            </div>
+            <div class="kuchniagrecka">
+                <div class="imgkuchnieswiata" style="position:relative;width:200px;height:150px;">
+                    <img src="Img/kuchniagrecka.webp" width="200" height="100" />
+                    <div style="position:absolute;top: 0; left: 0; right: 0; bottom: 0;">
+                    <h3>Kuchnia Grecka</h3>
+                </div>
+                </div>
+                <div>
+                    <p>Jest to dział sztuki kulinarnej wywodzącej się z kultury helleńskiej i charakterystycznej dla ziem Grecji i Greków. Należy do europejskich kuchni o profilu śródziemnomorskim i cechach wspólnych dla kuchni włoskiej, bałkańskiej, tureckiej, lewantyńskiej i cypryjskiej. Zazwyczaj uważana jest za zdrową i prostą, bez skomplikowanych receptur dań, lecz dość pracochłonną pod względem przygotowania posiłków utrzymanych na ogół w stylu wiejskim. Charakteryzuje się m.in. powszechnym w gastronomii tej strefy, szerokim zastosowaniem czosnku, oliwy z oliwek, liści winorośli, dużej ilości warzyw i świeżych ziół. Przy bogactwie warzyw i przypraw mięso używane jest raczej jako dodatek niż główny składnik potraw.</p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>Strone wykonał: Patryk Klimala</p>
+    </footer>
+</body>
+</html>

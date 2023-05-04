@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolacje</title>
+    <style>
+              *{
+            padding: 0;
+            margin: 0;
+        }
+
+        header{
+            width: 100vw;
+            height: auto;
+            background-color: #939393;  
+        }
+
+        .logo{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .menu{
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid rgb(255, 255, 255);
+            border-bottom: 1px solid rgb(255, 255, 255);
+        }
+
+        ol {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            list-style-type:none;
+            padding:0;
+            margin:0;
+            font-size:18px;
+            height:2em;
+            line-height:2em;
+            text-align:center;
+        }
+
+        ol a {
+            display:block;
+            text-decoration:none;
+            color:rgb(0, 0, 0);
+            padding:0 5px;
+        }
+
+        ol > li {
+            float:left;
+            width:150px;
+            margin-left:1px;
+            background-color:#939393;
+            height:2em;
+        }
+
+        ol > li:first-child {
+            margin-left:0;
+        }
+
+        ol > li:hover {
+            background-color:#EEE;
+        }
+
+        ol > li:hover > a {
+            color:#09C;
+        }
+
+        ol > li:hover > ul {
+            display:block;
+        }
+
+        ol > li > ul {
+            display:none;
+            list-style-type:none;
+            padding:0;
+            margin:0;
+        }
+
+        ol > li > ul > li {
+            position:relative;
+            background-color:#EEE;
+        }
+
+        ol > li > ul > li > a {
+            border-top:1px solid #FFF;
+        }
+
+        ol > li > ul > li:hover {
+            background-color:#DDD;
+        }
+
+        main{
+            width: 100vw;
+            background-color: #cccccc;
+        }
+
+        article{
+            width: 100%;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 50% 50%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    
+        .przepis{
+            border: 2px solid gray;
+            border-radius: 3%;
+            margin: 2%;
+            padding: 20px;
+        }
+
+        footer{
+            background-color: #939393;
+            color: #959595;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+        nav ol {
+        font-size: 14px;
+        }
+
+        article{
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 90%;
+        }
+        }
+    </style>
+</head>
+<body style="overflow-x: hidden;">
+    <header>
+        <div class="logo">
+            <a href="stronaglowna.html"><img src="Img/Logo.png" alt="logo" width="80%"></a>
+        </div>
+        <div class="menu">
+            <nav>
+                <ol>
+                    <li><a href="stronaglowna.html">Strona główna</a></li>
+                    <li><a href="onas.html">O nas</a></li>
+                    <li><a href="kuchnieswiata.html">Kuchnie świata</a></li>
+                    <li>Przepisy
+                        <ul>
+                          <li><a href="sniadanie.html">Śniadanie</a></li>
+                          <li><a href="obiad.html">Obiad</a></li>
+                          <li><a href="kolacja.html">Kolacja</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="przepis">
+                <h1>Kanapki z awokado i jajkiem na twardo</h1>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>Składniki:</p>
+                <p>• 2 jajka</p>
+                <p>• 1 awokado</p>
+                <p>• 4 kromki chleba pełnoziarnistego</p>
+                <p>• 1 pomidor</p>
+                <p>• kilka liści sałaty</p>
+                <p>• sól i pieprz do smaku</p>
+                <p>• sok z cytryny</p>
+                <br>
+                <h1>Sposób przygotowania</h1>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>1. Ugotuj jajka na twardo i pokrój w plastry.</p> 
+                <p>2. Awokado przekrój na pół, usuń pestkę i wyjmij miąższ łyżką.</p> 
+                <p>4. Rozgnieć awokado widelcem i skrop sokiem z cytryny.</p> 
+                <p>5. Pomidora pokrój w plastry.</p>
+		        <p>6. Chleb podpiecz w tosterze lub na patelni.</p>
+		        <p>7. Na jednej kromce chleba ułóż liście sałaty, plaster pomidora, plaster jajka i około 2 łyżek puree z awokado. </p>
+		        <p>8. Posól i popieprz do smaku.</p>
+		        <p>9. Przykryj drugą kromką chleba i podawaj.</p>
+            </div>
+            <div class="przepis">
+                <h1>Zupa krem z dyni</h1>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>Składniki:</p>
+                <p>• 1 cebula</p>
+                <p>• 2 ząbki czosnku</p>
+                <p>• 500 g dyni obranej i pokrojonej w kostkę</p>
+                <p>• 2 marchewki</p>
+                <p>• 1 ziemniak</p>
+                <p>• 1 litr bulionu warzywnego</p>
+		        <p>• 1/2 szklanki śmietany 18%</p>
+		        <p>• sól i pieprz do smaku</p>
+		        <p>• 1 łyżka oleju</p>
+                <br>
+                <h1>Sposób przygotowania</h1>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>1. Cebulę i czosnek posiekaj i podsmaż na oleju na patelni, aż będą miękkie.</p>
+                <p>2. Dodaj pokrojoną w kostkę dynię, marchewkę i ziemniaka.</p>
+                <p>3. Wlej bulion i gotuj na małym ogniu, aż warzywa będą miękkie, około 20-25 minut</p>
+ 		        <p>4. Zmiksuj na gładki krem i dodaj śmietanę. </p>
+ 		        <p>5. Dopraw solą i pieprzem do smaku i podawaj.</p>
+            </div>
+            <div class="przepis">
+                <h1>Sałatka z grillowanym kurczakiem i warzywami</h1>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>Składniki:</p>
+                <p>• 2 filety z kurczaka</p>
+                <p>• 1 papryka czerwona</p>
+                <p>• 1 papryka żółta</p>
+                <p>• 1 cukinia</p>
+                <p>• 1 cebula</p>
+                <p>• kilka listków sałaty</p>
+		        <p>• kilka pomidorów koktajlowych</p>
+		        <p>• sok z cytryny</p>
+		        <p>• sól i pieprz</p>
+                <br>
+                <h1>Sposób przygotowania</h1>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>1. Warzywa pokrój w grubszą kostkę.</p>
+                <p>2. Na patelni grillowej rozgrzej oliwę z oliwek i usmaż kurczaka, aż będzie rumiany.</p>
+                <p>3. Wyjmij z patelni i pokrój w paseczki.</p>
+ 		        <p>4. Na tej samej patelni grilluj warzywa, aż będą miękkie, około 10 minut.</p>
+ 		        <p>5. Na dnie salaterki ułóż listki sałaty.</p>
+		        <p>6. Na sałacie ułóż grillowane warzywa i kurczaka.</p>
+		        <p>7. Pokrój pomidory na połówki i ułóż na sałatce.</p>
+		        <p>8. Skrop sokiem z cytryny i oliwą z oliwek. Dopraw solą i pieprzem do smaku.</p>
+		        <p>9. Całość dokładnie wymieszaj i podawaj. </p>
+            </div>
+            <div class="przepis">
+                <h1>Krewetki na ostro z makaronem</h1>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>Składniki:</p>
+                <p>• 300 g krewetek</p>
+                <p>• 200 g makaronu spaghetti</p>
+                <p>• 2 ząbki czosnku</p>
+                <p>• 1/2 czerwonej papryki</p>
+                <p>• 1/2 żółtej papryki</p>
+                <p>• 2 łyżki oliwy z oliwek</p>
+		    <p>• 1/2 łyżeczki chilli</p>
+		    <p>• sok z cytryny</p>
+		    <p>• sól i pieprz</p>
+                <br>
+                <h1>Sposób przygotowania</h1>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>1. Makaron ugotuj w osolonej wodzie.</p>
+                <p>2. Czosnek i paprykę pokrój w drobną kostkę.</p>
+                <p>3. W garnku rozgrzej oliwę i dodaj czosnek oraz paprykę.</p>
+ 		    <p>4. Po chwili dodaj krewetki i chilli.</p>
+ 		    <p>5. Smaż przez 5-7 minut.</p>
+		    <p>6. Wymieszaj makaron z sosem z krewetek.</p>
+		    <p>7. Dopraw solą i pieprzem do smaku.</p>
+		    <p>8. Skrop sokiem z cytryny i oliwą z oliwek.</p>
+		    <p>9. Dopraw solą i pieprzem. </p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>Strone wykonał: Patryk Klimala</p>
+    </footer>
+</body>
+</html>

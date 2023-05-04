@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O nas</title>
+    <style>
+          *{
+            padding: 0;
+            margin: 0;
+        }
+
+        header{
+            width: 100vw;
+            height: auto;
+            background-color: #939393;  
+        }
+
+        .logo{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .menu{
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid rgb(255, 255, 255);
+            border-bottom: 1px solid rgb(255, 255, 255);
+        }
+
+        ol {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            list-style-type:none;
+            padding:0;
+            margin:0;
+            font-size:18px;
+            height:2em;
+            line-height:2em;
+            text-align:center;
+        }
+
+        ol a {
+            display:block;
+            text-decoration:none;
+            color:rgb(0, 0, 0);
+            padding:0 5px;
+        }
+
+        ol > li {
+            float:left;
+            width:150px;
+            margin-left:1px;
+            background-color:#939393;
+            height:2em;
+        }
+
+        ol > li:first-child {
+            margin-left:0;
+        }
+
+        ol > li:hover {
+            background-color:#EEE;
+        }
+
+        ol > li:hover > a {
+            color:#09C;
+        }
+
+        ol > li:hover > ul {
+            display:block;
+        }
+
+        ol > li > ul {
+            display:none;
+            list-style-type:none;
+            padding:0;
+            margin:0;
+        }
+
+        ol > li > ul > li {
+            position:relative;
+            background-color:#EEE;
+        }
+
+        ol > li > ul > li > a {
+            border-top:1px solid #FFF;
+        }
+
+        ol > li > ul > li:hover {
+            background-color:#DDD;
+        }
+
+        main{
+            width: 100vw;
+            height: auto;
+            background-color: #cccccc;
+            display: flex;
+        }
+
+        article{
+            padding: 50px;
+            width: 50%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .lorem p{
+            margin-top: 20px;
+        }
+
+        section{
+            padding: 50px;
+            width: 50%;
+        }
+
+        footer{
+            background-color: #939393;
+            color: #959595;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+        nav ol {
+        font-size: 14px;
+        }
+
+        main{
+            flex-direction: column;
+        }
+
+        img{
+            width: 100%;
+        }
+        }
+    </style>
+</head>
+<body style="overflow-x: hidden;">
+    <header>
+        <div class="logo">
+            <a href="stronaglowna.html"><img src="Img/Logo.png" alt="logo" width="80%"></a>
+        </div>
+        <div class="menu">
+            <nav>
+                <ol>
+                    <li><a href="stronaglowna.html">Strona główna</a></li>
+                    <li><a href="onas.html">O nas</a></li>
+                    <li><a href="kuchnieswiata.html">Kuchnie świata</a></li>
+                    <li>Przepisy
+                        <ul>
+                          <li><a href="sniadanie.html">Śniadanie</a></li>
+                          <li><a href="obiad.html">Obiad</a></li>
+                          <li><a href="kolacja.html">Kolacja</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+                <div class="lorem">
+                    <h1>O nas</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae fringilla orci. Nullam consectetur convallis turpis, et imperdiet lacus dignissim ac. Nulla ac tellus sit amet quam accumsan pellentesque. Vivamus iaculis viverra malesuada. Etiam ac odio lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc porta ante ut dictum interdum. Donec consequat ex nec arcu tempor, non dignissim mauris pharetra. Suspendisse potenti.</p>
+                    <p>Aenean id rhoncus dolor, ac tempor turpis. Cras placerat id neque eu consequat. Curabitur urna nibh, facilisis a neque a, convallis aliquam lectus. Praesent congue lacinia enim vitae suscipit. Etiam sit amet erat nisi. Maecenas ultricies nisl tristique lectus hendrerit tincidunt. Quisque at turpis nunc.</p>
+                    <p>Integer leo tortor, elementum nec mauris non, congue porta nisi. Nam dolor ex, dignissim non ultricies eu, accumsan eu tellus. Etiam pharetra sed odio at elementum. Nulla facilisi. Pellentesque a varius tellus, a mollis orci. Sed vel nibh elit. Mauris vitae dictum nunc, sed lacinia risus. Nunc et dui sodales, fringilla urna vel, porta leo. Donec bibendum sit amet purus et pretium. Nullam efficitur varius lacus eu tincidunt. Fusce aliquet placerat turpis, sed cursus risus.</p>
+                    <p>Phasellus ultricies finibus mauris feugiat sodales. Morbi efficitur sit amet purus eget tincidunt. Nullam mollis pulvinar libero. Sed porttitor eleifend metus, id tincidunt ipsum elementum nec. Praesent aliquam metus eu mi elementum lacinia. Donec dignissim mauris quis dapibus imperdiet. Nam sodales vulputate lectus in semper. Phasellus eu ligula quam. Praesent congue condimentum sem, sit amet faucibus nulla consectetur sit amet.</p>
+                    <p>Sed ut mauris a ex eleifend gravida. Phasellus a sagittis tellus. Vestibulum vitae luctus ipsum. Fusce at feugiat purus. Vivamus rutrum sodales nulla ac iaculis. Nulla vel congue tortor. Nunc eu mauris imperdiet, commodo augue sit amet, scelerisque nulla. Pellentesque viverra odio risus, id scelerisque dolor dictum non. Duis arcu lectus, semper ut velit in, cursus iaculis orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius lorem sagittis leo commodo sagittis. In nec congue dolor, in semper quam. Vivamus semper cursus ligula, sed faucibus ipsum vehicula non.</p>
+                    <p>Maecenas sit amet aliquet risus. Nulla suscipit tortor sit amet feugiat porttitor. Suspendisse dolor mauris, sagittis ac felis ut, dictum volutpat erat. Sed ornare vehicula ex. Nulla interdum lorem at sem commodo ultrices. Duis nec odio ac elit feugiat molestie. Quisque gravida felis purus, eu tempus mi cursus eget. Aliquam et odio mauris. Maecenas semper nec nisl a rutrum. Pellentesque suscipit faucibus metus, nec venenatis massa molestie quis. Proin viverra condimentum arcu, sed rhoncus urna finibus vel. Ut sagittis augue id mollis dapibus.</p>
+                    <p>Vestibulum felis tellus, facilisis ullamcorper urna at, faucibus interdum dolor. Donec vel dolor commodo, commodo eros sit amet, faucibus quam. Nullam dictum dolor sit amet vulputate feugiat. Pellentesque ultrices mauris at ipsum congue, dictum dignissim elit hendrerit. Duis id pulvinar libero. Vestibulum pharetra ultricies dolor vitae vulputate. Duis hendrerit pulvinar aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum quis sapien non feugiat. Vivamus tempor urna a ante sollicitudin, a hendrerit tortor efficitur. Pellentesque venenatis, orci vitae accumsan placerat, erat ipsum vulputate eros, quis posuere sapien dolor ac libero. In efficitur tellus eros, rhoncus dignissim massa volutpat eget. Sed tincidunt vitae velit id dignissim.</p>
+                </div>
+        </article>
+        <section>
+            <div class="img">
+                <img src="Img/onas.png" alt="onas" width="50%">
+                <img src="Img/onas.png" alt="onas" width="50%">
+                <img src="Img/onas.png" alt="onas" width="50%">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Strone wykonał: Patryk Klimala</p>
+    </footer>
+</body>
+</html>

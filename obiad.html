@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obiady</title>
+    <style>
+              *{
+            padding: 0;
+            margin: 0;
+        }
+
+        header{
+            width: 100vw;
+            height: auto;
+            background-color: #939393;  
+        }
+
+        .logo{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .menu{
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid rgb(255, 255, 255);
+            border-bottom: 1px solid rgb(255, 255, 255);
+        }
+
+        ol {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            list-style-type:none;
+            padding:0;
+            margin:0;
+            font-size:18px;
+            height:2em;
+            line-height:2em;
+            text-align:center;
+        }
+
+        ol a {
+            display:block;
+            text-decoration:none;
+            color:rgb(0, 0, 0);
+            padding:0 5px;
+        }
+
+        ol > li {
+            float:left;
+            width:150px;
+            margin-left:1px;
+            background-color:#939393;
+            height:2em;
+        }
+
+        ol > li:first-child {
+            margin-left:0;
+        }
+
+        ol > li:hover {
+            background-color:#EEE;
+        }
+
+        ol > li:hover > a {
+            color:#09C;
+        }
+
+        ol > li:hover > ul {
+            display:block;
+        }
+
+        ol > li > ul {
+            display:none;
+            list-style-type:none;
+            padding:0;
+            margin:0;
+        }
+
+        ol > li > ul > li {
+            position:relative;
+            background-color:#EEE;
+        }
+
+        ol > li > ul > li > a {
+            border-top:1px solid #FFF;
+        }
+
+        ol > li > ul > li:hover {
+            background-color:#DDD;
+        }
+
+        main{
+            width: 100vw;
+            background-color: #cccccc;
+        }
+
+        article{
+            width: 100%;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 50% 50%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    
+        .przepis{
+            border: 2px solid gray;
+            border-radius: 3%;
+            margin: 2%;
+            padding: 20px;
+        }
+
+        footer{
+            background-color: #939393;
+            color: #959595;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+        nav ol {
+        font-size: 14px;
+        }
+
+        article{
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 90%;
+        }
+        }
+    </style>
+</head>
+<body style="overflow-x: hidden;">
+    <header>
+        <div class="logo">
+            <a href="stronaglowna.html"><img src="Img/Logo.png" alt="logo" width="80%"></a>
+        </div>
+        <div class="menu">
+            <nav>
+                <ol>
+                    <li><a href="stronaglowna.html">Strona główna</a></li>
+                    <li><a href="onas.html">O nas</a></li>
+                    <li><a href="kuchnieswiata.html">Kuchnie świata</a></li>
+                    <li>Przepisy
+                        <ul>
+                          <li><a href="sniadanie.html">Śniadanie</a></li>
+                          <li><a href="obiad.html">Obiad</a></li>
+                          <li><a href="kolacja.html">Kolacja</a></li>
+                        </ul>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="przepis">
+                <h1>Sphagetti bolognese</h1>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>Składniki:</p>
+                <p>• 400 g mielonego mięsa wołowego</p>
+                <p>• 1 cebula</p>
+                <p>• 2 ząbki czosnku</p>
+                <p>• 1 łyżka oliwy z oliwek</p>
+                <p>• 1 puszka krojonych pomidorów</p>
+                <p>• 2 łyżki koncentratu pomidorowego</p>
+                <p>• 1 łyżeczka cukru</p>
+                <p>• 1 łyżeczka oregano</p>
+                <p>• sól i pieprz</p>
+                <p>• 400 g makaronu spaghetti</p>
+                <br>
+                <h1>Sposób przygotowania</h1>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>1. W garnku ugotuj makaron al dente. </p>
+                <p>2. Na patelni rozgrzej oliwę z oliwek i zeszklij posiekaną cebulę i czosnek.</p> 
+                <p>3. Dodaj mięso i smaż, aż się zrumieni.</p> 
+                <p>Następnie dodaj pomidory, koncentrat pomidorowy, cukier i oregano.</p> 
+                <p>4. Dopraw solą i pieprzem do smaku i dusz przez około 15 minut.</p> 
+                <p>5. Podawaj spaghetti z sosem bolognese.</p>
+            </div>
+            <div class="przepis">
+                <h1>Kurczak curry z ryżem</h1>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>Składniki:</p>
+                <p>• 2 filety z kurczaka</p>
+                <p>• 1 cebula</p>
+                <p>• 2 ząbki czosnku</p>
+                <p>• 1 łyżka oleju</p>
+                <p>• 1 łyżka pasty curry</p>
+                <p>• 1 puszka mleka kokosowego</p>
+                <p>• sól i pieprz</p>
+                <p>• 200 g ryżu</p>
+                <br>
+                <h1>Sposób przygotowania</h1>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>1. W garnku ugotuj ryż. </p>
+                <p>2. Na patelni rozgrzej olej i zeszklij cebulę i czosnek.</p> 
+                <p>3. Dodaj mięso i smaż, aż się zrumieni.</p> 
+                <p>4. Następnie dodaj pastę curry i mleko kokosowe.</p> 
+                <p>5. Dopraw solą i pieprzem dla smaku i duś na małym ogniu przez około 15 minut.</p>
+		        <p>6. Podawaj z ryżem.</p>
+            </div>
+            <div class="przepis">
+                <h1>Klopsiki w sosie pomidorowym</h1>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>Składniki:</p>
+                <p>• 500 g mięsa mielonego wołowo-wieprzowego</p>
+                <p>• 1 cebula</p>
+                <p>• 2 ząbki czosnku</p>
+                <p>• 1 jajko</p>
+                <p>• 1/2 szklanki bułki tartej</p>
+                <p>• 1 łyżeczka suszonego oregano</p>
+                <p>• sól i pieprz</p>
+                <p>• 1 puszka krojonych pomidorów</p>
+                <p>• 1 łyżka koncentratu pomidorowego</p>
+                <p>• 1 łyżeczka cukru</p>
+		        <p>• 1 łyżka oliwy z oliwek</p>
+                <br>
+                <h1>Sposób przygotowania</h1>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>1. Cebulę i czosnek posiekaj.</p>  
+                <p>2. W misce wymieszaj mięso mielone, jajko, bułkę tartą, posiekaną cebulę i czosnek, oregano, sól i pieprz.</p> 
+                <p>3.  Uformuj z masy klopsiki. Na patelni rozgrzej oliwę i smaż klopsiki z każdej strony, aż się zrumienią.</p> 
+                <p>4.  Dodaj pomidory, koncentrat pomidorowy, cukier i dusz na małym ogniu przez około 20 minut.</p> 
+                <p>5. Podawaj klopsiki z sosem pomidorowym.</p>
+            </div>
+            <div class="przepis">
+                <h1>Kremowa zupa pomidorowa z ryżem</h1>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>Składniki:</p>
+                <p>• 1 cebula</p>
+                <p>• 2 ząbki czosnku</p>
+                <p>• 1 łyżka masła</p>
+                <p>• 500 g krojonych pomidorów z puszki</p>
+                <p>• 500 ml bulionu warzywnego</p>
+                <p>• 100 g ryżu</p>
+                <p>• 1 łyżeczka cukru</p>
+                <p>• 2 łyżki posiekanej natki pietruszki</p>
+                <p>• 2 łyżki śmietany kremówki</p>
+                <p>• </p>
+                <br>
+                <h1>Sposób przygotowania</h1>
+                <br>
+                <hr color="gray">
+                <br>
+                <p>1. Na patelni rozgrzej masło i zeszklij cebulę i czosnek.</p> 
+                <p>2. Dodaj pomidory, bulion i ryż.</p> 
+                <p>3. Dopraw cukrem, solą i pieprzem.</p> 
+                <p>4. Gotuj na małym ogniu, aż ryż będzie miękki, około 20 minut.</p> 
+                <p>5. Dodaj posiekaną natkę pietruszki i śmietanę. Rozgrzej jeszcze przez kilka minut i podawaj.</p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>Strone wykonał: Patryk Klimala</p>
+    </footer>
+</body>
+</html>
